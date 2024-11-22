@@ -7,7 +7,7 @@ function About() {
       <h2 className="text-4xl font-bold text-primary mb-6 animate-fadeIn">
         About Me
       </h2>
-      <div className="flex flex-col md:flex-row items-center justify-center md:space-x-10">
+      <div className="flex flex-col md:flex-row items-center justify-center md:space-x-20">
         {/* Profile Picture */}
         <img
           src="https://via.placeholder.com/300"
@@ -18,7 +18,7 @@ function About() {
         <div className="">
           <p className="text-gray-700 text-lg leading-relaxed mb-4 text-justify">
             Hi there! I'm{" "}
-            <span className="font-bold text-secondary">[Your Name]</span>, an
+            <span className="font-bold text-secondary">Fritz Kevin Manurung</span>, an
             enthusiastic IT student with a passion for creating impactful
             solutions using technologies like{" "}
             <span className="font-bold">React</span>,{" "}

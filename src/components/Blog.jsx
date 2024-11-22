@@ -19,13 +19,13 @@ const blogs = [
 
 function Blog() {
   return (
-    <div className="container mx-auto px-6 py-12 flex flex-col items-center justify-center min-h-screen">
+    <div className="container mx-auto px-6 py-12">
       <h2 className="text-4xl font-bold text-primary mb-10 text-center">Blog</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+      <div className="flex flex-wrap justify-center gap-6">
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className="bg-white p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 w-80"
+            className="bg-white p-6 w-80 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
           >
             <img
               src={blog.image}
@@ -39,7 +39,7 @@ function Blog() {
               href={blog.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:text-secondary mt-4 flex items-center"
+              className="text-primary hover:text-secondary mt-4 flex items-center justify-center"
             >
               Read More <i className="fas fa-external-link-alt ml-2"></i>
             </a>
