@@ -100,7 +100,7 @@ function App() {
       </header>
 
       {/* Main Content */}
-      <main>
+      <main className="px-32">
         <section id="about" className="py-16"><About /></section>
         <section id="skills" className="py-16"><Skills /></section>
         <section id="projects" className="py-16"><Projects /></section>
