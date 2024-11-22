@@ -19,13 +19,13 @@ const blogs = [
 
 function Blog() {
   return (
-    <div className="container mx-auto px-6">
-      <h2 className="text-4xl font-bold text-primary mb-6 text-center">Blog</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="container mx-auto px-6 py-12 flex flex-col items-center justify-center min-h-screen">
+      <h2 className="text-4xl font-bold text-primary mb-10 text-center">Blog</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className="bg-white p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+            className="bg-white p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 w-80"
           >
             <img
               src={blog.image}
